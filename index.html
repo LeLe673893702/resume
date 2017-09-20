@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>个人简历</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal-default-theme.min.css">
+
+</head>
+
+<body>
+<div class="container" id="cv">
+    <div class="side">
+        <div class="me">
+            <div class="portrait"></div>
+            <div class="remodal remodal-img" data-remodal-id="portrait-modal">
+                <h3>请输入图片URL地址：</h3>
+                <br/>
+                <input type="text" id="avatar-url">
+                <button data-remodal-action="confirm" class="remodal-confirm">确定</button>
+            </div>
+        </div>
+        <div class="profile info-unit">
+            <h2 class="info-header"><i class="iconfont icon-person"></i> <span class=3"info-title">个人简介</span></h2>
+            <hr>
+            <ul class="info-list">
+                <li>
+                    <label class="left-label">姓名</label><span class="label-value">刘乐</span></li>
+                <li>
+                    <label class="left-label">邮箱</label><span class="label-value">673893702@qq.com</span></li>
+                <li>
+                    <label class="left-label">手机号码</label><span class="label-value">13055537258</span></li>
+                <li> <label class="left-label">求职岗位</label><span class="label-value">Android应用开发工程师</span></li>
+            </ul>
+        </div>
+
+        <div class="stack info-unit">
+            <h2 class="info-header"><i class="iconfont icon-build"></i> <span class="info-title">技术栈</span></h2>
+            <hr>
+            <ul class="stack-list">
+               <li>
+                   熟悉JAVA编程,了解C、C++、Python编程。
+               </li>
+                <li>
+                    熟悉Android四大组件以及数据传递，常用布局和控件的使用。
+                </li>
+                <li>
+                    熟悉利用JSON方式进行数据交换，能利用FastJson完成JSON数据的解析。
+                </li>
+                <li>熟悉Android主流开发框架的基本使用，比如RxJava，Retrofit，Glide、GreenDAO、ButterKnife等的使用。</li>
+                <li>熟悉Android常用数据存储方式以及SQLite，MySQL数据库的操作使用。</li>
+                <li>
+                    了解常用的设计模式，并能将设计模式运用到实际的开发之中。
+                </li>
+                <li>了解MVP，MVC架构，并能在实际开发中运用。</li>
+                <li>了解HTTP协议，能用Socket、HttpUrlConnection等网络编程技术。</li>
+            </ul>
+        </div>
+
+        <div class="trophy info-unit">
+            <h2 class="info-header"><i class="iconfont icon-trophy"></i> <span class="info-title">奖项与证书</span></h2>
+            <hr>
+            <ul class="experience-list">
+                </br>
+                <li>
+                    <p>软考软件设计师资格证</p>
+                </li>
+                </br>
+                <li>
+                    <p>2017全国大学生电子设计大赛省一等奖</p>
+                </li>
+                </br>
+                <li>
+                    <p>2017“中星杯”+泛珠三角洲大学生作品赛全国总决赛铜奖</p>
+                </li>
+                </br>
+                <li>
+                    <p>2017“中星杯”+泛珠三角洲大学生作品赛福建赛区二等奖</p>
+                </li>
+                </br>
+                <li>
+                    <p>2017福建省大学生程序设计大赛（ACM）铜奖</p>
+                </li>
+                </br>
+                <li>
+                    <p>第七届“锐智杯”福建省大学生智能设计大赛省二等奖</p>
+                </li>
+                </br>
+                <li>
+                    <p>第七届“蓝桥杯”个人赛（C/C++）省三等奖</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+        <div class="education info-unit right-list">
+            <h2 class="info-header"><i class="iconfont icon-education"></i> <span class="info-title">教育经历</span></h2>
+            <hr>
+            <ul class="experience-list">
+                <li>
+                    <h3>闽江学院 - 计算机科学与技术（本科）2014-2018</h3>
+                    <h4>主修科目</h4>
+                    <p>
+                        C语言、C++、Java、计算机网络、数据库设计与开发
+                    </p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="project info-unit right-list">
+            <h2 class="info-header"><i class="iconfont icon-project"></i> <span class="info-title">个人项目</span></h2>
+            <hr>
+            <ul class="experience-list">
+                    <h3>快销库     2017.04-2017.07</h3>
+                        <h4>项目简介</h4>
+                        一款用于布料供应商和买布客户沟通交流,发布布料信息的APP。
+                        <h4>项目职责</h4>
+                        本人主要负责即时通讯模块的编码开发，项目采用MVP架构。
+                        </br>
+                        包括以下几个功能：好友管理、用户筛选搜索、群聊管理、即时聊天、登录注册、用户信息管理。
+                        <h4>技术点</h4>
+                        <ul class="project-list">
+                            <li>整体布局用ViewPager+Fragment，并且采用懒加载的方式，优化性能。</li>
+                            <li>将Activity，Fragment等将相同的方法全部封装成基类，其他继承即可减少重复代码的出现。</li>
+                            <li>集成环信SDK3.0和百度地图SDK,实现即时聊天，可以发送文字、语音、视频、表情、地址。</li>
+                            <li>后台请求用RxJava2+Retrofit2，同时与环信服务器和本地服务器交互，使用RxLifecycle2防止RxJava内存泄露。</li>
+                        </ul>
+                </li>
+                <li>
+                    <h3>中速物流仓储系统      2016.11-2017.03</h3>
+                    <h4>项目简介</h4>
+                     和中速物流有限公司合作，一款物流仓储管理的软件，预计11月份投入使用。
+                    <h4>项目职责</h4>
+                    负责手持机卸货、盘点、分拣的功能编码开发。
+                    </br>
+                    负责APP车辆管理、收货管理、错误反馈的功能编码开发。
+                    <h4>技术点</h4>
+                    <ul  class="project-list">
+                        <li>手持机每次扫描条码会换行叠加，因而重写TextWatcher()中的方法，进行简单的方法设计，
+                            每次都只会填充一个扫描条码，且不会自动换行。</li>
+                        <li>采用NoHttp作为网络请求框架，对NoHttp二次封装，加入RxJava。</li>
+                        <li>集成百度语音合成API，操作成功或者失败，播放语音提醒操作人员。</li>
+                        <li>用ListView，ExpandListView用于货物信息，车辆人员信息等的展示。</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>陪伴机器人APP     2016.07-2017.09</h3>
+                    <h4>项目简介</h4>
+                    一款配合硬件机器人使用的APP，创新项目，现已结题，参加若干个比赛并获奖。
+                    <h4>项目职责</h4>
+                    独立开发APP所有功能,包括语音识别合成、智能问答、VR视频播放、视频传输、与下位机数据交互等功能。
+                    <h4>技术点</h4>
+                    <ul  class="project-list">
+                        <li>APP通过Socket和下位机数据交互，发送移动指令、字符串等。</li>
+                        <li>集成图灵,百度语音SDK，实现智能问答、语音识别、语音唤醒等功能。</li>
+                        <li>对开源项目MD360Player4Android二次开发，实现VR视频播放。</li>
+                        <li>带上VR眼镜，随着头部转动，APP获取陀螺仪的参数传递给下位机控制云台转动，从而看到周围环境。</li>
+                    </ul>
+
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="aboutme info-unit right-paragraph">
+            <h2 class="info-header"><i class="iconfont icon-flower"></i> <span class="info-title">自我评价</span></h2>
+            <hr>
+            <ul class="my_evaluate">
+                <li>
+                    性格活泼开朗，有责任心，能积极完成自己的工作。
+                </li>
+                <li>
+                    与人为善，有良好的沟通能力和团队合作精神，在校期间与多位同学合作完成项目。
+                </li>
+                <li>
+                    热爱学习，有较强的学习能力，在校期间不断要求自己，提升自己。
+                </li>
+                <li>对人对事有足够的耐心，能勇于接受新鲜事物带来的挑战。</li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
