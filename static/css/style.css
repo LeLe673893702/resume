@@ -74,8 +74,12 @@ h1, h2, h3, h4, h5 {
 
 .right-list li {
     margin-bottom: 12px;
+    list-style-type:none;
 }
 
+li {
+    list-style-type:none;
+}
 
 hr {
     margin-bottom: 8px;
@@ -223,7 +227,7 @@ h3{
 
 }
 .project-list li{
-    list-style-type:disc;
+    list-style-type: decimal;
 }
 .my_evaluate li{
     margin-top: 20px;
@@ -278,7 +282,7 @@ ul li{
 }
 
  .stack-list li{
-     list-style-type: disc;
+     list-style-type: none;
      margin-top: 20px;
  }
  .stack-list .item-remove {
@@ -288,6 +292,10 @@ ul li{
     margin-right: 2px;
     visibility: hidden;
     cursor: pointer;
+}
+
+.experience-list li p {
+    margin-left: 10px;
 }
 
 
